@@ -8,12 +8,12 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
 }
 
-main {
-  margin-inline: 200px;
+.page-sizing {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*==background first section*/
@@ -56,7 +56,7 @@ main {
 /*==headings*/
 .headings {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
 }
