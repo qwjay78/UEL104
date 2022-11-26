@@ -14,10 +14,8 @@
 
   .navbar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-inline: 70px;
-    margin-bottom: 45px;
     color: white;
     &__title{
         span{
@@ -29,6 +27,68 @@
         gap: 32px;
         list-style: none;
         padding-left: 0;
+        height: 100px;
+        font-weight: bold;
+        &--underline{
+            border-bottom: solid 3px $color-primary;
+        }
+        /*cacher menu déroulant*/
+        &__submenu{
+            display: none;
+            }
+
+           
+        &__menu{
+            width: 50px;
+            &__title{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .fa-solid.fa-caret-up{
+                    color: $color-primary;
+                    display: none;
+                }
+            }
+            &:hover .fa-solid.fa-caret-up{
+                display: block;
+            }
+            &:hover .fa-solid.fa-caret-down{
+                display: none;
+            }
+            &:hover a{
+                color: $color-primary;
+            }
+            /*afficher menu déroulant*/
+            &:hover .navbar__topics__submenu {
+                display: block;
+                list-style: none;
+                padding-left: 0;
+                border: 1px solid;
+                border-bottom: none;
+                margin-top: 10px;
+                width: 200px;
+                background-color: white;
+                box-shadow: 0px 0px 50px 6px rgba(124,117,117,0.56);
+                position: absolute;
+                li{
+                    border-bottom: 1px solid lightgray;
+                    padding: 6px;
+                    padding-left: 16px;
+                    &:hover{
+                        background-color: whitesmoke;
+                    }
+                    a{
+                        color: grey;
+                        font-weight: 500;
+                    }
+                }
+                
+            }
+           
+        }
+           
+        }
+
     a{
         text-decoration: none;
         color: white;
@@ -36,11 +96,8 @@
             color: $color-primary;
         }
     }
-     &--underline{
-        border-bottom: solid 2px $color-primary;
     }
-    }
-    }
+    
     
 
 

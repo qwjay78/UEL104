@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*==principal sheet*/ /*police*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -31,10 +32,8 @@ main {
 /*==navbar*/
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-inline: 70px;
-  margin-bottom: 45px;
   color: white;
 }
 .navbar__title span {
@@ -45,16 +44,68 @@ main {
   gap: 32px;
   list-style: none;
   padding-left: 0;
+  height: 100px;
+  font-weight: bold;
+  /*cacher menu déroulant*/
 }
-.navbar__topics a {
+.navbar__topics--underline {
+  border-bottom: solid 3px #f21eb0;
+}
+.navbar__topics__submenu {
+  display: none;
+}
+.navbar__topics__menu {
+  width: 50px;
+  /*afficher menu déroulant*/
+}
+.navbar__topics__menu__title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar__topics__menu__title .fa-solid.fa-caret-up {
+  color: #f21eb0;
+  display: none;
+}
+.navbar__topics__menu:hover .fa-solid.fa-caret-up {
+  display: block;
+}
+.navbar__topics__menu:hover .fa-solid.fa-caret-down {
+  display: none;
+}
+.navbar__topics__menu:hover a {
+  color: #f21eb0;
+}
+.navbar__topics__menu:hover .navbar__topics__submenu {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  border: 1px solid;
+  border-bottom: none;
+  margin-top: 10px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0px 0px 50px 6px rgba(124, 117, 117, 0.56);
+  position: absolute;
+}
+.navbar__topics__menu:hover .navbar__topics__submenu li {
+  border-bottom: 1px solid lightgray;
+  padding: 6px;
+  padding-left: 16px;
+}
+.navbar__topics__menu:hover .navbar__topics__submenu li:hover {
+  background-color: whitesmoke;
+}
+.navbar__topics__menu:hover .navbar__topics__submenu li a {
+  color: grey;
+  font-weight: 500;
+}
+.navbar a {
   text-decoration: none;
   color: white;
 }
-.navbar__topics a:hover {
+.navbar a:hover {
   color: #f21eb0;
-}
-.navbar__topics--underline {
-  border-bottom: solid 2px #f21eb0;
 }
 
 /*==headings*/
