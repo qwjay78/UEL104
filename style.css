@@ -35,6 +35,8 @@ main {
   justify-content: space-between;
   margin-inline: 70px;
   color: white;
+  height: 60px;
+  margin-bottom: 70px;
 }
 .navbar__title span {
   font-weight: normal;
@@ -44,7 +46,6 @@ main {
   gap: 32px;
   list-style: none;
   padding-left: 0;
-  height: 100px;
   font-weight: bold;
   /*cacher menu déroulant*/
 }

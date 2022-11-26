@@ -17,6 +17,8 @@
     justify-content: space-between;
     margin-inline: 70px;
     color: white;
+    height: 60px;
+    margin-bottom: 70px;
     &__title{
         span{
             font-weight: normal;
@@ -27,7 +29,6 @@
         gap: 32px;
         list-style: none;
         padding-left: 0;
-        height: 100px;
         font-weight: bold;
         &--underline{
             border-bottom: solid 3px $color-primary;
