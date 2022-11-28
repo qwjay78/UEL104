@@ -146,6 +146,7 @@ main {
   height: 300px;
   width: 200px;
   box-shadow: -40px 32px 0px 0px #f21eb0;
+  object-fit: cover;
 }
 
 /*==icons part*/
@@ -202,6 +203,7 @@ main {
   height: 160px;
   width: 420px;
   box-shadow: 0px -5px 50px -10px rgba(8, 7, 7, 0.58);
+  object-fit: cover;
 }
 .gallery__flex__image--middle {
   height: 200px;
@@ -332,6 +334,34 @@ main {
 }
 .success--background {
   background-color: white;
+}
+
+.portfolio {
+  background-color: #f5fafd;
+}
+.portfolio h2 {
+  text-align: center;
+  padding-top: 32px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.portfolio p {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.portfolio img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

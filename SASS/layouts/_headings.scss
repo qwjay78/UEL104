@@ -2,6 +2,7 @@
 
 .background{
     background : linear-gradient(120deg, rgba(102,123,229,1) 0%, rgba(114,81,172,1) 35%, rgba(113,80,169,0.7878501742493873) 100%);
+
     &__overlay{
         background-image: url(./images/circles.png);
   }
@@ -140,5 +141,6 @@
         height: 300px;
         width: 200px;
         box-shadow: -40px 32px 0px 0px $color-primary;
+        object-fit: cover;
     }
   }
