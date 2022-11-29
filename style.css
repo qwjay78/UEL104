@@ -229,9 +229,9 @@ main {
   font-weight: bold;
 }
 .gallery button {
-  height: 35px;
-  width: 90px;
-  font-size: 0.8rem;
+  height: 30px;
+  width: 70px;
+  font-size: 0.6rem;
   padding: 0;
   background-color: #f21eb0;
   border: solid 2px #4fa9f5;
@@ -497,6 +497,85 @@ aside button {
   margin: 4px;
   margin-bottom: 40px;
   color: rgb(178, 175, 175);
+}
+
+/*==blog section*/
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5fafd;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.blog h2 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.blog__subtitle {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+.blog__flex {
+  display: flex;
+  gap: 20px;
+}
+.blog__article {
+  border: solid 1px lightgray;
+  border-top: 0;
+  background-color: white;
+  width: 280px;
+}
+.blog__article img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.blog__article .grey {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.blog__text {
+  padding: 20px;
+  padding-bottom: 35px;
+}
+.blog__text h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
+.blog__text p {
+  font-size: 0.78rem;
+  margin-bottom: 20px;
+}
+.blog__text a, .blog__text span {
+  color: #4fa9f5;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.blog button {
+  margin-top: 20px;
+  height: 30px;
+  width: 120px;
+  font-size: 0.55rem;
+  padding: 0;
+  background-color: #f21eb0;
+  border: solid 2px #4fa9f5;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*==form section*/
+.form {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

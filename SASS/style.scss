@@ -10,3 +10,86 @@
 @import "./layouts/client-aside";
 @import "./layouts/team";
 
+/*==blog section*/
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5fafd;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    h2{
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+    &__subtitle{
+        text-align: center;
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+
+    }
+    &__flex{
+        display: flex;
+        gap: 20px;
+    }
+    &__article{
+        border: solid 1px lightgray;
+        border-top: 0;
+        background-color: white;
+        width: 280px;
+        img{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .grey{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    }
+    &__text{
+        padding: 20px;
+        padding-bottom: 35px;
+        h3{
+            margin-top: 0;
+            font-weight: 600;
+        }
+        p{
+            font-size: 0.78rem;
+            margin-bottom: 20px;
+        }
+        a,span{
+            color: $color-secondary;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+    }
+    button{
+        margin-top: 20px;
+        height: 30px;
+        width: 120px;
+        font-size: 0.55rem;
+        padding: 0;
+        background-color: $color-primary;
+        border: solid 2px $color-secondary;
+        border-radius: 5px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+/*==form section*/
+
+
+.form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
