@@ -420,4 +420,83 @@ main {
   margin-top: 40px;
 }
 
+/*==aside*/
+aside {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4fa9f5;
+  align-items: center;
+}
+aside p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+aside p, aside button {
+  color: white;
+}
+aside button {
+  background-color: #f21eb0;
+  font-weight: 600;
+  font-size: 0.55rem;
+  width: 135px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*==team section*/
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.team h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.team p {
+  font-size: 0.85rem;
+}
+.team h2, .team p {
+  text-align: center;
+}
+.team__group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+}
+.team__member img {
+  width: 360px;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: -30px;
+}
+.team__member__info {
+  text-align: center;
+  width: 200px;
+  border: 1px solid lightgray;
+  border-top: none;
+}
+.team__member__info h3 {
+  font-size: 1rem;
+}
+.team__member__info p {
+  font-style: italic;
+}
+.team__member__info i {
+  font-size: 1.3rem;
+  margin: 4px;
+  margin-bottom: 40px;
+  color: rgb(178, 175, 175);
+}
+
 /*# sourceMappingURL=style.css.map */

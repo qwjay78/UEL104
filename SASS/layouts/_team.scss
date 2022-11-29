@@ -1,0 +1,55 @@
+/*==team section*/
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 0.85rem;
+    }
+    h2,p{
+        text-align: center;
+    }
+    &__group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+    }
+    &__member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+        img{
+            width: 360px;
+            height: 280px;
+            object-fit: cover;
+            margin-bottom: -30px;
+        }
+        &__info{
+            text-align: center;
+            width: 200px;
+            border: 1px solid lightgray;
+            border-top: none;
+            h3{
+                font-size: 1rem;
+            }
+            p{
+                font-style: italic;
+            }
+            i{
+                font-size: 1.3rem;
+                margin: 4px;
+                margin-bottom: 40px;
+                color: rgb(178, 175, 175);
+            }
+        }
+    }
+}
