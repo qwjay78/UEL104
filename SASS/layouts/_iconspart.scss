@@ -4,8 +4,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-inline: 200px;
+    gap: 20px;
     &__content{
         display: flex;
         flex-direction: column;
@@ -26,6 +28,7 @@
     }
     h3{
         font-size: 0.9rem;
+        text-align: center;
     }
     p{
         text-align: center;

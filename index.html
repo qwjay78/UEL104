@@ -516,7 +516,8 @@
           </div>
         </article>
         <article class="blog__article">
-          <img class="grey"
+          <img
+            class="grey"
             src="https://i.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4"
             alt="Homme travaillant avec un ordinateur"
           />
@@ -552,22 +553,56 @@
     </section>
     <!-- form section -->
     <section class="form">
-        <h2>Contact us</h2>
-        <p>With the Internet spreading linke wildfire and reaching every part of our daily life, more and more traffic is directed<br>to websites in search for information.</p>
-        <form action="#" method="post">
-            <label for="name">Name <span>*</span></label>
-            <div>
-            <input type="text" name="firstname">
-            <input type="text" name="lastname">
-            </div>
-            <label for="email">Email<span>*</span></label>
-            <input type="text" name="email">
-            <label for="message">Comment or Message <span>*</span></label>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Submit">
-
-
-        </form>
+      <h2>Contact us</h2>
+      <p>
+        With the Internet spreading linke wildfire and reaching every part of
+        our daily life, more and more traffic is directed<br />to websites in
+        search for information.
+      </p>
+      <form action="#" method="post">
+        <label for="name">Name<span> *</span></label>
+        <div class="form__flex">
+          <div class="form__name">
+            <input type="text" name="firstname" />
+            <label for="firstname" class="sublabel">Prénom</label>
+          </div>
+          <div class="form__name">
+            <input type="text" name="lastname" />
+            <label for="lastname" class="sublabel">Nom</label>
+          </div>
+        </div>
+        <label for="email">Email<span> *</span></label>
+        <input type="text" name="email" class="email" />
+        <label for="message">Comment or Message<span> *</span></label>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit" class="submit" />
+      </form>
     </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer__grid">
+        </div>
+        <div class="footer__grid">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>San Francisco - Adresse - 18<br>California Street 1100.</p>
+        </div>
+        <div class="footer__grid">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:hello@mycoolsite.com">hello@mycoolsite.com</a>
+        </div>
+        <div class="footer__grid">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+1(555)345234343">+1 (555) 345 234343</a>
+        </div>
+        <div class="footer__grid--pink">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+        </div>
+        <div class="footer__grid--noborder">
+        </div>
+    </footer>
   </body>
 </html>
