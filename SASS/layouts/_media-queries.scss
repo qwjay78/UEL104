@@ -1,7 +1,20 @@
 /*==media queries*/
+@media screen and (min-width:1800px) {
+    .success, .success--background{
+        justify-content: space-evenly;
+    }
+}
 @media screen and (max-width: 1024px) {
   .background__overlay {
     height: 400px;
+  }
+  .icons-part {
+    margin-inline: 50px;
+    p {
+      br {
+        display: none;
+      }
+    }
   }
   .team {
     &__group {
@@ -32,14 +45,7 @@
       }
     }
   }
-  .icons-part {
-    margin-inline: 50px;
-    p {
-      br {
-        display: none;
-      }
-    }
-  }
+  
 
   footer {
     br {
