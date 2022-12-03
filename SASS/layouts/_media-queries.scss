@@ -1,5 +1,8 @@
 /*==media queries*/
 @media screen and (max-width: 1024px) {
+  .background__overlay {
+    height: 400px;
+  }
   .team {
     &__group {
       display: grid;
@@ -85,6 +88,19 @@
 }
 
 @media screen and (max-width: 768px) {
+  .background {
+    background: linear-gradient(
+      175deg,
+      rgb(102, 123, 229),
+      rgb(114, 81, 172) 50%,
+      rgba(113, 80, 169, 0.7878501742),
+      white 18%
+    );
+    height: 810px;
+    &__overlay {
+      height: 390px;
+    }
+  }
   .navbar {
     align-items: center;
     flex-direction: column;
@@ -104,13 +120,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: black;
       p {
         text-align: center;
       }
     }
+    &__buttons__component--nocolor {
+      color: #696bd0;
+    }
     img {
       margin-left: 30px;
     }
+  }
+  .icons-part {
+    border-top: solid 1px lightgray;
+    padding-top: 50px;
   }
 
   footer {
@@ -178,7 +202,7 @@
         display: none;
         &--middle {
           height: 180px;
-          width: 100%;
+          width: 95%;
           position: initial;
         }
       }
@@ -230,14 +254,8 @@
       height: 40px;
     }
   }
-}
-
-@media screen and (max-width: 500px) {
-  .headings {
-    &__buttons {
-      flex-direction: column;
-      align-items: center;
-    }
+  .icons-part {
+    flex-direction: column;
   }
   .team {
     &__group {
@@ -245,13 +263,26 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
     }
   }
+  .headings {
+    &__text {
+      margin-inline: 20px;
+    }
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    height: 900px;
+  }
+
   .portfolio {
     img {
       height: 200px;
     }
-  }
-  .icons-part {
-    flex-direction: column;
   }
 
   .form {
@@ -259,7 +290,6 @@
       flex-direction: column;
     }
   }
-
   .skills {
     &__content {
       flex-direction: column;

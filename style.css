@@ -12,21 +12,15 @@ body {
   margin: 0;
 }
 
-.page-sizing {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-main {
-  margin-inline: 200px;
-}
-
 /*==background first section*/
 .background {
-  background: linear-gradient(120deg, rgb(102, 123, 229) 0%, rgb(114, 81, 172) 35%, rgba(113, 80, 169, 0.7878501742) 100%);
+  background: linear-gradient(175deg, rgb(102, 123, 229), rgb(114, 81, 172) 70%, rgba(113, 80, 169, 0.7878501742), white 18%);
+  height: 550px;
 }
 .background__overlay {
   background-image: url(./images/circles.png);
+  transform: skewY(-4.8deg);
+  height: 408px;
 }
 
 /*==navbar*/
@@ -38,6 +32,7 @@ main {
   color: white;
   height: 70px;
   margin-bottom: 70px;
+  transform: skewY(4.8deg);
 }
 .navbar__title span {
   font-weight: normal;
@@ -116,6 +111,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   color: white;
+  transform: skewY(4.8deg);
 }
 .headings h1 {
   margin: 0;
@@ -158,7 +154,6 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 50px;
   padding-bottom: 50px;
   margin-inline: 200px;
   gap: 32px;
@@ -706,6 +701,9 @@ aside button {
 
 /*==media queries*/
 @media screen and (max-width: 1024px) {
+  .background__overlay {
+    height: 400px;
+  }
   .team__group {
     display: grid;
     grid-template-columns: 0.2fr 0.2fr;
@@ -771,6 +769,13 @@ aside button {
   }
 }
 @media screen and (max-width: 768px) {
+  .background {
+    background: linear-gradient(175deg, rgb(102, 123, 229), rgb(114, 81, 172) 50%, rgba(113, 80, 169, 0.7878501742), white 18%);
+    height: 810px;
+  }
+  .background__overlay {
+    height: 390px;
+  }
   .navbar {
     align-items: center;
     flex-direction: column;
@@ -790,12 +795,20 @@ aside button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
   }
   .headings__text p {
     text-align: center;
   }
+  .headings__buttons__component--nocolor {
+    color: #696bd0;
+  }
   .headings img {
     margin-left: 30px;
+  }
+  .icons-part {
+    border-top: solid 1px lightgray;
+    padding-top: 50px;
   }
   footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -839,7 +852,7 @@ aside button {
   }
   .gallery__flex__image--middle {
     height: 180px;
-    width: 100%;
+    width: 95%;
     position: initial;
   }
   .portfolio__grid {
@@ -880,21 +893,27 @@ aside button {
     width: 150px;
     height: 40px;
   }
-}
-@media screen and (max-width: 500px) {
-  .headings__buttons {
+  .icons-part {
     flex-direction: column;
-    align-items: center;
   }
   .team__group {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+  .headings__text {
+    margin-inline: 20px;
+  }
+  .headings__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .background {
+    height: 900px;
+  }
   .portfolio img {
     height: 200px;
-  }
-  .icons-part {
-    flex-direction: column;
   }
   .form__flex {
     flex-direction: column;
